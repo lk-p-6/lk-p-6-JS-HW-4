@@ -1,15 +1,15 @@
 'use strict';
 
 function isXOtrue(str){
-    let number = 0;
+    let isEqual = 0;
     for(let i = 0; i < str.length; i++){
         if(str.charAt(i).toLowerCase() === "o"){
-            number++;
+            isEqual++;
         } else if(str.charAt(i).toLowerCase() === "x"){
-            number--;
+            isEqual--;
         }
     }
-    return number === 0;
+    return isEqual === 0;
 }
 
 console.log(isXOtrue("ooxx")); 

@@ -3,7 +3,7 @@
 function iterativeOddSumTo(number){
     let oddSum = 0;
     for(let i = 0; i <= number; i++){
-        (i % 2 === 1 && Math.sign(i) === 1) ? oddSum += i : null;
+        i % 2 && (oddSum += i);
     }
     return oddSum;
 }

@@ -4,7 +4,7 @@ function recursiveOddSumTo(number, oddSum = 0){
     if(number <= 0){
         return oddSum;
     } else {
-        (number % 2 === 1) ? oddSum += number : null;
+        number % 2 && (oddSum += number);
         return recursiveOddSumTo(number-1, oddSum);
     }
 }
